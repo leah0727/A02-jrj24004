@@ -12,3 +12,15 @@ df = housing.frame
 # Quick check
 print(df.head())
 print(df.shape)
+
+
+
+# you can save the boxplot
+plt. figure(figsize=(6, 4)) 
+df['MedHouseVal'].plot.box()
+plt.title("Boxplot of Median House Value")
+plt.ylabel("Median House Value")
+plt. tight_layout ()
+plt.savefig("figures/med_house_value_boxplot.png")
+# <-- saved file
+plt.close()
